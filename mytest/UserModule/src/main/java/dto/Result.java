@@ -5,6 +5,15 @@ public class Result {
     private String status;
     private Object data;
 
+    public Result() {
+    }
+
+    public Result(boolean flag, String status, Object data) {
+        this.flag = flag;
+        this.status = status;
+        this.data = data;
+    }
+
     public boolean isFlag() {
         return flag;
     }
